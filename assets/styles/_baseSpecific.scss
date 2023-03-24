@@ -1,0 +1,131 @@
+/* Page Events */
+
+.page-events,
+.page-current,
+.page-upcoming,
+.page-upcoming-current,
+.page-past {
+  @media (min-width: $breakpoint-tablet) {
+    flynt-component[name='NavigationAgenda'] {
+      display: block;
+
+      .boxed {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .blockAnnouncement {
+    .wrapper {
+      top: 250px;
+    }
+  }
+
+  .mainHeader {
+    &-desktop {
+      &.headroom {
+        &--unpinned {
+          transform: translateY(-147px);
+        }
+      }
+    }
+  }
+
+  .mainContent {
+    min-height: calc(100vh - 200px);
+
+    @media (min-width: $breakpoint-tablet) {
+      margin-top: 240px;
+      min-height: calc(100vh - 320px);
+    }
+  }
+}
+
+/* Page Artists */
+
+.page-artists {
+  @media (min-width: $breakpoint-tablet) {
+    flynt-component[name='NavigationArtists'] {
+      display: block;
+
+      .boxed {
+        padding-bottom: 0;
+      }
+
+      .wrapper {
+        padding-bottom: 0;
+      }
+
+      .menu {
+        border-bottom: 1px solid var(--black);
+        padding-bottom: var(--spacingLarge);
+      }
+    }
+    
+    flynt-component[name='NavigationArtistsAnchor'] {
+      display: none;
+    }
+  }
+
+  .blockAnnouncement {
+    .wrapper {
+      top: 250px;
+    }
+  }
+
+  .mainHeader {
+    &-desktop {
+      &.headroom {
+        &--unpinned {
+          transform: translateY(-147px);
+        }
+      }
+    }
+  }
+
+  .mainContent {
+    min-height: calc(100vh - 200px);
+
+    @media (min-width: $breakpoint-tablet) {
+      margin-top: 240px;
+      min-height: calc(100vh - 320px);
+    }
+  }
+}
+
+/* Post Artist */
+
+.single-post {
+  @media (min-width: $breakpoint-tablet) {
+    flynt-component[name='NavigationArtists'] {
+      display: block;
+    }
+    
+    flynt-component[name='NavigationArtistsAnchor'] {
+      display: block;
+    }
+
+    flynt-component[name='ListingEvents'] {
+      scroll-margin-top: 96px;
+    }
+  }
+
+  .mainHeader {
+    &-desktop {
+      &.headroom {
+        &--unpinned {
+          transform: translateY(-242px);
+        }
+      }
+    }
+  }
+
+  .mainContent {
+    min-height: calc(100vh - 200px);
+    
+    @media (min-width: $breakpoint-tablet) {
+      margin-top: 295px;
+      min-height: calc(100vh - 320px);
+    }
+  }
+}

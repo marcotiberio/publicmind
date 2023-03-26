@@ -8,17 +8,7 @@ flynt-component[name='NavigationMain'] {
   .boxed {
     padding-bottom: 0;
   }
-
-  .link {
-    @include reset-link;
-  }
-
-  .current-menu-item {
-    .link {
-      transform: rotate(-16deg);
-    }
-  }
-
+  
   .submenu {
     align-items: flex-start;
     background: var(--white);

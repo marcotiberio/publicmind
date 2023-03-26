@@ -1,131 +1,51 @@
-/* Page Events */
-
-.page-events,
-.page-current,
-.page-upcoming,
-.page-upcoming-current,
-.page-past {
-  @media (min-width: $breakpoint-tablet) {
-    flynt-component[name='NavigationAgenda'] {
-      display: block;
-
-      .boxed {
-        padding-bottom: 0;
-      }
-    }
-  }
-
-  .blockAnnouncement {
-    .wrapper {
-      top: 250px;
-    }
-  }
-
-  .mainHeader {
-    &-desktop {
-      &.headroom {
-        &--unpinned {
-          transform: translateY(-147px);
-        }
-      }
-    }
-  }
-
-  .mainContent {
-    min-height: calc(100vh - 200px);
-
-    @media (min-width: $breakpoint-tablet) {
-      margin-top: 240px;
-      min-height: calc(100vh - 320px);
-    }
+.home {
+  flynt-component[name='NavigationMain'] {
+    .link {
+      @apply text-white;
+    } 
   }
 }
 
-/* Page Artists */
-
 .page-artists {
-  @media (min-width: $breakpoint-tablet) {
-    flynt-component[name='NavigationArtists'] {
-      display: block;
+  .mainContent {
+    display: block;
+    height: 100vw;
+    left: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 1px;
+    position: absolute;
+    scrollbar-width: none;
+    top: 0;
+    transform: rotate(-90deg) translateY(-100vh);
+    transform-origin: right top;
+    width: 100vh;
 
-      .boxed {
-        padding-bottom: 0;
-      }
-
-      .wrapper {
-        padding-bottom: 0;
-      }
-
-      .menu {
-        border-bottom: 1px solid var(--black);
-        padding-bottom: var(--spacingLarge);
-      }
-    }
-    
-    flynt-component[name='NavigationArtistsAnchor'] {
+    &::-webkit-scrollbar {
       display: none;
     }
   }
 
-  .blockAnnouncement {
-    .wrapper {
-      top: 250px;
-    }
+  .mainContent > flynt-component[name='ArchiveArtists'] {
+    display: block;
+    padding: 60px 20px;
+    transform: rotate(90deg) translateY(-70vh);
+    transform-origin: right top;
+  }
+  
+  .squares {
+    padding: 30vh 0 0;
   }
 
-  .mainHeader {
-    &-desktop {
-      &.headroom {
-        &--unpinned {
-          transform: translateY(-147px);
-        }
-      }
-    }
+  .squares > flynt-component[name='ArchiveArtists'] {
+    height: 30vh;
+    // margin: 20px 0;
+    margin: 0;
+    width: 30vh;
   }
 
-  .mainContent {
-    min-height: calc(100vh - 200px);
-
-    @media (min-width: $breakpoint-tablet) {
-      margin-top: 240px;
-      min-height: calc(100vh - 320px);
-    }
-  }
-}
-
-/* Post Artist */
-
-.single-post {
-  @media (min-width: $breakpoint-tablet) {
-    flynt-component[name='NavigationArtists'] {
-      display: block;
-    }
-    
-    flynt-component[name='NavigationArtistsAnchor'] {
-      display: block;
-    }
-
-    flynt-component[name='ListingEvents'] {
-      scroll-margin-top: 96px;
-    }
-  }
-
-  .mainHeader {
-    &-desktop {
-      &.headroom {
-        &--unpinned {
-          transform: translateY(-242px);
-        }
-      }
-    }
-  }
-
-  .mainContent {
-    min-height: calc(100vh - 200px);
-    
-    @media (min-width: $breakpoint-tablet) {
-      margin-top: 295px;
-      min-height: calc(100vh - 320px);
-    }
-  }
+  .squares>flynt-component[name='ArchiveArtists']:last-child {
+    margin-bottom: calc(-100vh + 10px);
+  }  
 }

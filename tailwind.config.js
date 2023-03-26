@@ -13,10 +13,10 @@ module.exports = {
       current: 'currentColor'
     },
     screens: {
-      sm: '641px',
-      md: '769px',
-      lg: '1181px',
-      xl: '1281px'
+      sm: '640px',
+      md: '780px',
+      lg: '1180px',
+      xl: '1440px'
     },
     extend: {
       borderWidth: {
@@ -27,8 +27,10 @@ module.exports = {
         4: '4px'
       },
       spacing: {
-        sm: '15px',
-        lg: '35px'
+        sm: '20px',
+        md: '40px',
+        lg: '60px',
+        xl: '100px'
       }
     }
   },

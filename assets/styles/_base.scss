@@ -10,17 +10,22 @@
 // }
 
 html {
+  font-size: var(--bodyFontSize);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -ms-overflow-style: -ms-autohiding-scrollbar;
   scroll-behavior: smooth;
+
+  @media (min-width: $breakpoint-tablet + 1) {
+    font-size: var(--bodyFontSize);
+  }
 }
 
 body,
 .paragraph
 p {
   color: var(--color-text);
-  font-family: 'Montserrat', Verdana, sans-serif; // FOUC can be reduced with good matching fallback font: https://meowni.ca/font-style-matcher/
+  font-family: 'Courier New', Courier, monospace;
   font-size: var(--bodyFontSizeSmall);
 
   @media (min-width: $breakpoint-tablet + 1) {
@@ -36,12 +41,12 @@ p {
 
 h1,
 .h1 {
-  font-size: 2.25rem;
-  font-weight: 700;
+  font-size: 3rem;
+  font-weight: bold;
   margin-bottom: 1rem;
 
   @media (min-width: $breakpoint-mobile) {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 }
 
@@ -88,8 +93,16 @@ h5,
   }
 }
 
-a {
-  color: var(--blue);
+.paragraph,
+p {
+  a {
+    color: var(--black);
+  
+    &::before {
+      content: '↦';
+      margin-right: 10px;
+    }
+  }
 }
 
 hr {
@@ -390,11 +403,11 @@ flynt-component {
 }
 
 /* Base flow for content */
-:where(#{$heading-selectors}, p, .paragraph, ul, ol, pre, table, figure, blockquote, form, fieldset, dl, address, details, hr, aside, video, fieldset) {
-  + * {
-    margin-block-start: var(--spacingSmall);
-  }
-}
+// :where(#{$heading-selectors}, p, .paragraph, ul, ol, pre, table, figure, blockquote, form, fieldset, dl, address, details, hr, aside, video, fieldset) {
+//   + * {
+//     margin-block-start: var(--spacingSmall);
+//   }
+// }
 
 .mainHeader {
   &-desktop {
@@ -417,15 +430,6 @@ flynt-component {
   }
 }
 
-.mainContent {
-  min-height: calc(100vh - 200px);
-
-  @media (min-width: $breakpoint-tablet) {
-    margin-top: 200px;
-    min-height: calc(100vh - 347px);
-  }
-}
-
 .pageWrapper {
   display: grid;
   grid-template-columns: 100%;
@@ -433,6 +437,21 @@ flynt-component {
 
   .admin-bar & {
     padding-block-start: var(--wp-admin--admin-bar--height);
+  }
+}
+
+
+.mainContent {
+  @apply p-sm;
+  @apply lg:py-lg;
+  @apply lg:px-sm;
+}
+
+.home {
+  .mainContent {
+    @apply p-0;
+    @apply lg:py-0;
+    @apply lg:px-0;
   }
 }
 

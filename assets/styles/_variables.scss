@@ -1,38 +1,12 @@
-:root,
-[data-theme='reset'] {
-  --color-accent: hsla(212, 100%, 45%, 1);
-  --color-background: hsla(0, 0%, 100%, 1);
-  --color-background-secondary: hsla(0, 0%, 19%, 0.08);
-  --color-border: #000;
-  --color-border-secondary: hsl(0, 0%, 19%, 0.68);
-  --color-text: hsl(0, 0%, 19%, 1);
-  --color-text-muted: hsla(0, 0%, 19%, 0.8);
-  --color-error: hsl(343, 98%, 46%);
-}
-
-[data-theme='light'] {
-  --color-background: hsla(228, 56%, 98%, 1);
-  --color-text: hsla(212, 100%, 15%, 1);
-}
-
-[data-theme='dark'] {
-  --color-accent: hsla(79, 100%, 60%, 1);
-  --color-background: hsla(212, 100%, 15%, 1);
-  --color-background-secondary: hsl(228, 56%, 98%, 0.06);
-  --color-border-secondary: hsl(0, 0%, 90%, 0.68);
-  --color-text: hsla(0, 0%, 100%, 1);
-  --color-text-muted: hsl(0, 0%, 100%, 0.8);
-}
-
-$breakpoint-mobile: 480px;
-$breakpoint-tablet: 1180px;
-$breakpoint-desktop: 1280px;
+$breakpoint-mobile: 640px;
+$breakpoint-tablet: 780px;
+$breakpoint-desktop: 1180px;
 
 $heading-selectors: 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6';
 $input-selectors: '[type="tel"], [type="url"], [type="text"], [type="date"], [type="email"], [type="search"], [type="number"], [type="password"], textarea, select';
 
 :root {
-  --bodyFontSize: 1rem; // Always use rem. 1rem = 16px
+  --bodyFontSize: 16px; // Always use rem. 1rem = 16px
   --bodyFontSizeSmall: 0.875rem;
   --flow-space: 1.5625rem;
 

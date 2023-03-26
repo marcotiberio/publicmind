@@ -40,9 +40,8 @@
     "src": "Components/ListingHomepage/script.js"
   },
   "Components/NavigationBurger/script.js": {
-    "file": "assets/script-71d14c85.js",
+    "file": "assets/script-d4d91a82.js",
     "imports": [
-      "assets/main.js",
       "_index-2a8ce3c2.js",
       "_helpers-0bb72b7a.js"
     ],
@@ -76,7 +75,7 @@
     "src": "assets/admin.js"
   },
   "assets/admin.scss": {
-    "file": "assets/admin-8154f89a.css",
+    "file": "assets/admin-5d97f4dd.css",
     "isEntry": true,
     "src": "assets/admin.scss"
   },
@@ -104,12 +103,12 @@
       "Components/NavigationBurger/script.js",
       "Components/SliderImages/script.js"
     ],
-    "file": "assets/main-368386de.js",
+    "file": "assets/main-9d7fee40.js",
     "isEntry": true,
     "src": "assets/main.js"
   },
   "assets/main.scss": {
-    "file": "assets/main-10a768b7.css",
+    "file": "assets/main-1cd19e8d.css",
     "isEntry": true,
     "src": "assets/main.scss"
   },
@@ -119,7 +118,7 @@
     "src": "assets/print.scss"
   },
   "assets/tinyMce.scss": {
-    "file": "assets/tinyMce-f7d2ee32.css",
+    "file": "assets/tinyMce-7eecd123.css",
     "isEntry": true,
     "src": "assets/tinyMce.scss"
   },

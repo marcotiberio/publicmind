@@ -70,6 +70,22 @@ add_action('Flynt/afterRegisterComponents', function () {
                     ],
                 ],
             ],
+            [
+                'label' => __('Booking', 'flynt'),
+                'name' => 'bookingTab',
+                'type' => 'tab',
+                'placement' => 'top',
+                'endpoint' => 0
+            ],
+            [
+                'label' => __('Booking Link', 'flynt'),
+                'name' => 'bookingLink',
+                'type' => 'link',
+                'return_format' => 'array',
+                'wrapper' => [
+                    'width' => 100
+                ],
+            ],
         ],
         'location' => [
             [

@@ -1,8 +1,34 @@
 .home {
-  flynt-component[name='NavigationMain'] {
+  flynt-component[name='NavigationMain'],
+  flynt-component[name='NavigationMainRight'] {
     .link {
       @apply text-white;
-    } 
+    }
+  }
+
+  flynt-component[name='NavigationBurger'] {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    .wrapper {
+      background-color: transparent;
+    }
+
+    .logo {
+      display: none;
+    }
+
+    .hamburger-lines {
+      &::before,
+      &::after,
+      &--primary,
+      &--text {
+        background-color: var(--white);
+      }
+    }
   }
 }
 
@@ -48,4 +74,88 @@
   .squares>flynt-component[name='ArchiveArtists']:last-child {
     margin-bottom: calc(-100vh + 10px);
   }  
+}
+
+.single-interview {
+  .post {
+    display: block;
+    height: 100vw;
+    left: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 1px;
+    position: absolute;
+    scrollbar-width: none;
+    top: 0;
+    transform: rotate(-90deg) translateY(-100vh);
+    transform-origin: right top;
+    width: 100vh;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .post > .interviewComponent {
+    display: block;
+    padding: 60px 20px;
+    transform: rotate(90deg);
+    transform-origin: right top;
+  }
+  
+  .squares {
+    padding: 100vh 0 0;
+  }
+
+  .squares > .interviewComponent {
+    height: 100vh;
+    width: 100vh;
+  }
+
+  .squares>.interviewComponent:last-child {
+    margin-bottom: calc((100vh)*(-1));
+  }
+}
+
+.page-archive {
+  .mainContent {
+    display: block;
+    height: 100vw;
+    left: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 1px;
+    position: absolute;
+    scrollbar-width: none;
+    top: 0;
+    transform: rotate(-90deg) translateY(-100vh);
+    transform-origin: right top;
+    width: 100vh;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .mainContent > .archiveComponent {
+    display: block;
+    padding: 60px 20px;
+    transform: rotate(90deg) translateX(-50vh) translateY(-25vh);
+    transform-origin: right top;
+  }
+  
+  .squares {
+    padding: 100vh 0 0;
+  }
+
+  .squares > .archiveComponent {
+    height: 50vh;
+    width: 50vh;
+  }
+
+  .squares>.archiveComponent:last-child {
+    margin-bottom: calc((100vh)*(-1));
+  }
 }

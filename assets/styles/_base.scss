@@ -2,8 +2,7 @@
 *  Typography
 */
 
-@include font-face('Montserrat', 'MontserratRegular', '400', 'normal');
-@include font-face('Montserrat', 'MontserratBold', '700', 'normal');
+@include font-face('Oracle', 'oraclegm-regularmono-webfont', '700', 'normal');
 
 // body {
 //   padding: var(--spacingLarge);
@@ -25,7 +24,7 @@ body,
 .paragraph
 p {
   color: var(--color-text);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Oracle', monospace;
   font-size: var(--bodyFontSizeSmall);
 
   @media (min-width: $breakpoint-tablet + 1) {
@@ -409,27 +408,6 @@ flynt-component {
 //   }
 // }
 
-.mainHeader {
-  &-desktop {
-    display: flex;
-    flex-flow: column;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-
-    &.headroom {
-      transition: transform 0.3s;
-      will-change: transform;
-
-      &--unpinned {
-        transform: translateY(-242px);
-      }
-    }
-  }
-}
-
 .pageWrapper {
   display: grid;
   grid-template-columns: 100%;
@@ -443,17 +421,25 @@ flynt-component {
 
 .mainContent {
   @apply p-sm;
-  @apply lg:py-lg;
-  @apply lg:px-sm;
+  @apply md:py-lg;
+  @apply md:px-sm;
 }
 
 .home {
   .mainContent {
     @apply p-0;
-    @apply lg:py-0;
-    @apply lg:px-0;
+    @apply md:py-0;
+    @apply md:px-0;
   }
 }
+
+// .page-archive {
+//   .mainContent {
+//     @apply p-0;
+//     @apply lg:py-0;
+//     @apply lg:px-0;
+//   }
+// }
 
 .componentSpacing {
   margin: var(--component-spacing) 0;

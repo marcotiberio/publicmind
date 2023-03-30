@@ -1,7 +1,7 @@
 .menu {
   @include reset-list;
   backface-visibility: hidden;
-  background-color: var(--color-background);
+  background-color: var(--white);
   display: flex;
   flex-flow: column;
   height: auto;
@@ -47,19 +47,19 @@
 
   .current-menu-item {
     .link {
-      transform: rotate(-16deg);
+      text-decoration: underline;
     }
 
     .submenu {
       .current-menu-item {
         .link {
-          transform: rotate(-16deg);
+          text-decoration: underline;
         }
       }
       
       :not(.current-menu-item) {
         .link {
-          transform: rotate(0);
+          text-decoration: none;
         }
       }
     }

@@ -1,0 +1,13 @@
+<flynt-component client:visible name="BlockPostArchive" class="archiveComponent">
+  {% for item in post %}
+    <div class="relative h-full flex justify-center items-center">
+      <a href="{{ item.link }}" class="flex justify-center items-center" aria-hidden="true" tabindex="-1">
+        <img class="figure-image lazyload h-auto object-cover"
+          src="{{ item.thumbnail.src }}"
+          data-srcset="{{function('wp_get_attachment_image_srcset', item.thumbnail.id)}}"
+          data-sizes="auto">
+        {# <div class="absolute top-0 left-0">{{ item.title }}</div> #}
+      </a>
+    </div>
+  {% endfor %}
+</flynt-component>

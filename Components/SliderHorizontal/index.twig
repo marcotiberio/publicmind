@@ -1,0 +1,17 @@
+<flynt-component client:visible name="SliderHorizontal">
+  <script type="application/json">{{ jsonData|json_encode }}</script>
+  <div class="">
+    <div data-ref="slider" class="slider">
+      <div class="swiper-wrapper">
+        {% for box in itemPanels %}
+          <a href="{{ box.title }}" class="box" id="box">
+            <img class="figure-image lazyload"
+              src="{{ box.image.src }}"
+              data-srcset="{{function('wp_get_attachment_image_srcset', box.image.id)}}"
+              data-sizes="auto">
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</flynt-component>

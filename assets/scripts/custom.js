@@ -1,18 +1,20 @@
-// // if you're using a bundler, first import:
-// import Headroom from 'headroom.js'
-// // grab an element
-// const myElement = document.querySelector('.mainHeader-desktop')
-// // construct an instance of Headroom, passing the element
-// const headroom = new Headroom(myElement)
-// // initialise
-// headroom.init()
+// import gsap from 'gsap'
+// import ScrollTrigger from 'gsap/ScrollTrigger'
 
-// Shuffle
+// // Fade-in Animation
+// gsap.registerPlugin(ScrollTrigger)
 
-// var parent = document.getElementById("listing");
-// var divs = parent.children;
-// var frag = document.createDocumentFragment();
-// while (divs.length) {
-//     frag.appendChild(divs[Math.floor(Math.random() * divs.length)]);
-// }
-// parent.appendChild(frag);
+// let sections = gsap.utils.toArray(".interviewComponent");
+
+// gsap.to(sections, {
+//   xPercent: -100 * (sections.length - 1),
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: ".single-interview .post",
+//     pin: true,
+//     scrub: 1,
+//     snap: 0,
+//     // base vertical scrolling on how wide the container is so it feels more natural.
+//     end: "+=3500",
+//   }
+// });

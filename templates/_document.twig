@@ -14,8 +14,9 @@
       <div class="pageWrapper">
         <header>
           {% block header %}
-            <div class="mainHeader-desktop">
+            <div class="fixed top-0 left-0 w-screen z-50 flex flex-row justify-between">
               {{ renderComponent('NavigationMain') }}
+              {{ renderComponent('NavigationMainRight') }}
             </div>
             {{ renderComponent('NavigationBurger') }}
           {% endblock %}

@@ -8,7 +8,7 @@ use Timber\Timber;
 
 add_action('init', function () {
     register_nav_menus([
-        'navigation_main' => __('Navigation Main', 'flynt')
+        'navigation_main' => __('Navigation Main Left', 'flynt')
     ]);
 });
 

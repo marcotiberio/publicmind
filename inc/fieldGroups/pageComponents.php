@@ -27,6 +27,7 @@ add_action('Flynt/afterRegisterComponents', function () {
                     Components\BlockImageLink\getACFLayout(),
                     Components\BlockImageText\getACFLayout(),
                     Components\BlockManifesto\getACFLayout(),
+                    Components\BlockPostArchive\getACFLayout(),
                     Components\BlockPress\getACFLayout(),
                     Components\BlockVideoOembed\getACFLayout(),
                     Components\BlockWysiwyg\getACFLayout(),
@@ -42,6 +43,7 @@ add_action('Flynt/afterRegisterComponents', function () {
                     Components\ListingHomepage\getACFLayout(),
                     Components\ListComponents\getACFLayout(),
                     Components\SliderImages\getACFLayout(),
+                    Components\SliderHorizontal\getACFLayout(),
                     Components\ReusableComponent\getACFLayout(),
                 ],
             ],
@@ -57,6 +59,21 @@ add_action('Flynt/afterRegisterComponents', function () {
                     'param' => 'post_type',
                     'operator' => '!=',
                     'value' => 'event'
+                ],
+                [
+                    'param' => 'post_type',
+                    'operator' => '!=',
+                    'value' => 'artist'
+                ],
+                [
+                    'param' => 'post_type',
+                    'operator' => '!=',
+                    'value' => 'interview'
+                ],
+                [
+                    'param' => 'post_type',
+                    'operator' => '!=',
+                    'value' => 'release'
                 ],
                 [
                     'param' => 'post_type',

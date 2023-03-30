@@ -1,6 +1,6 @@
 {
   "Components/AccordionDefault/script.js": {
-    "file": "assets/script-4ed993c7.js",
+    "file": "assets/script-c42ce534.js",
     "isDynamicEntry": true,
     "src": "Components/AccordionDefault/script.js"
   },
@@ -8,6 +8,14 @@
     "file": "assets/script-2b878f59.js",
     "isDynamicEntry": true,
     "src": "Components/BlockImageLink/script.js"
+  },
+  "Components/BlockPostArchive/script.js": {
+    "file": "assets/script-a3aa5070.js",
+    "imports": [
+      "__commonjsHelpers-28e086c5.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "Components/BlockPostArchive/script.js"
   },
   "Components/BlockVideoOembed/script.js": {
     "file": "assets/script-979c4bee.js",
@@ -40,13 +48,19 @@
     "src": "Components/ListingHomepage/script.js"
   },
   "Components/NavigationBurger/script.js": {
-    "file": "assets/script-d4d91a82.js",
+    "file": "assets/script-3da2d9d9.js",
     "imports": [
+      "__commonjsHelpers-28e086c5.js",
       "_index-2a8ce3c2.js",
       "_helpers-0bb72b7a.js"
     ],
     "isDynamicEntry": true,
     "src": "Components/NavigationBurger/script.js"
+  },
+  "Components/SliderHorizontal/script.js": {
+    "file": "assets/script-4ed993c7.js",
+    "isDynamicEntry": true,
+    "src": "Components/SliderHorizontal/script.js"
   },
   "Components/SliderImages/script.css": {
     "file": "assets/script-6c3c321b.css",
@@ -62,6 +76,9 @@
     ],
     "isDynamicEntry": true,
     "src": "Components/SliderImages/script.js"
+  },
+  "__commonjsHelpers-28e086c5.js": {
+    "file": "assets/_commonjsHelpers-28e086c5.js"
   },
   "_helpers-0bb72b7a.js": {
     "file": "assets/helpers-0bb72b7a.js"
@@ -79,13 +96,9 @@
     "isEntry": true,
     "src": "assets/admin.scss"
   },
-  "assets/fonts/MontserratBold.woff2": {
-    "file": "assets/MontserratBold-9f56e8d4.woff2",
-    "src": "assets/fonts/MontserratBold.woff2"
-  },
-  "assets/fonts/MontserratRegular.woff2": {
-    "file": "assets/MontserratRegular-deb8f7fa.woff2",
-    "src": "assets/fonts/MontserratRegular.woff2"
+  "assets/fonts/oraclegm-regularmono-webfont.woff": {
+    "file": "assets/oraclegm-regularmono-webfont-d9253bb3.woff",
+    "src": "assets/fonts/oraclegm-regularmono-webfont.woff"
   },
   "assets/images/logo.svg": {
     "file": "assets/logo-26c0c58f.svg",
@@ -96,19 +109,21 @@
       "node_modules/@webreflection/custom-elements-builtin/esm/index.js",
       "Components/AccordionDefault/script.js",
       "Components/BlockImageLink/script.js",
+      "Components/BlockPostArchive/script.js",
       "Components/BlockVideoOembed/script.js",
       "Components/GridPostsArchive/script.js",
       "Components/ListComponents/script.js",
       "Components/ListingHomepage/script.js",
       "Components/NavigationBurger/script.js",
+      "Components/SliderHorizontal/script.js",
       "Components/SliderImages/script.js"
     ],
-    "file": "assets/main-9d7fee40.js",
+    "file": "assets/main-0a23e7a0.js",
     "isEntry": true,
     "src": "assets/main.js"
   },
   "assets/main.scss": {
-    "file": "assets/main-1cd19e8d.css",
+    "file": "assets/main-004a4fee.css",
     "isEntry": true,
     "src": "assets/main.scss"
   },
@@ -118,7 +133,7 @@
     "src": "assets/print.scss"
   },
   "assets/tinyMce.scss": {
-    "file": "assets/tinyMce-7eecd123.css",
+    "file": "assets/tinyMce-4a918421.css",
     "isEntry": true,
     "src": "assets/tinyMce.scss"
   },

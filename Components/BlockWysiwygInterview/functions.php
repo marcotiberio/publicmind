@@ -11,14 +11,14 @@ function getACFLayout()
         'label' => __('Block: Text Editor', 'flynt'),
         'sub_fields' => [
             [
-                'label' => __('General', 'flynt'),
-                'name' => 'generalTab',
+                'label' => __('Top', 'flynt'),
+                'name' => 'topTab',
                 'type' => 'tab',
                 'placement' => 'top',
                 'endpoint' => 0,
             ],
             [
-                'label' => __('Content', 'flynt'),
+                'label' => __('Top Content', 'flynt'),
                 'name' => 'contentHtml',
                 'type' => 'wysiwyg',
                 'delay' => 1,
@@ -26,11 +26,19 @@ function getACFLayout()
                 'required' => 1,
             ],
             [
-                'label' => __('Options', 'flynt'),
-                'name' => 'optionsTab',
+                'label' => __('Bottom', 'flynt'),
+                'name' => 'bottomTab',
                 'type' => 'tab',
                 'placement' => 'top',
-                'endpoint' => 0
+                'endpoint' => 0,
+            ],
+            [
+                'label' => __('Bottom Content', 'flynt'),
+                'name' => 'contentHtmlBottom',
+                'type' => 'wysiwyg',
+                'delay' => 1,
+                'media_upload' => 0,
+                'required' => 1,
             ],
         ]
     ];

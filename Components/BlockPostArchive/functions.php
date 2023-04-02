@@ -26,8 +26,46 @@ function getACFLayout()
                 'required' => 0,
                 'wrapper' => [
                     'width' => 100,
+                ]
+            ],
+            [
+                'label' => __('Add animation', 'flynt'),
+                'name' => 'addAnimation',
+                'type' => 'true_false',
+                'default_value' => 0,
+                'ui' => 1,
+                'ui_on_text' => __('Yes', 'flynt'),
+                'ui_off_text' => __('No', 'flynt'),
+                'wrapper' => [
+                    'width' => 100
+                ]
+            ],
+            [
+                'label' => __('Select animation', 'flynt'),
+                'name' => 'selectAnimation',
+                'type' => 'select',
+                'allow_null' => 1,
+                'multiple' => 0,
+                'ui' => 0,
+                'ajax' => 0,
+                'choices' => [
+                    '' => __('(none)', 'flynt'),
+                    'fade-in' => __('Fade-in', 'flynt'),
                 ],
-            ]
+                'default_value' => '',
+            ],
+            [
+                'label' => __('Add parallax effect', 'flynt'),
+                'name' => 'addParallax',
+                'type' => 'true_false',
+                'default_value' => 0,
+                'ui' => 1,
+                'ui_on_text' => __('Yes', 'flynt'),
+                'ui_off_text' => __('No', 'flynt'),
+                'wrapper' => [
+                    'width' => 100
+                ]
+            ],
         ]
     ];
 }

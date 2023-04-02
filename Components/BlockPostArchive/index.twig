@@ -1,12 +1,24 @@
-<flynt-component client:visible name="BlockPostArchive" class="archiveComponent">
+<flynt-component 
+  client:visible 
+  name="BlockPostArchive" 
+  class="archiveComponent 
+  min-w-[60vw] lg:min-w-[30vw] min-h-full 
+  flex justify-center align-middle 
+  pr-sm lg:pr-0 
+  {# {% if addParallax %}rellax{% endif %}  #}
+  {% if addAnimation %}animated{% endif %} 
+  {% if selectAnimation %}{{ selectAnimation }}{% endif %}">
   {% for item in post %}
     <div class="relative h-full flex justify-center items-center">
-      <a href="{{ item.link }}" class="flex justify-center items-center" aria-hidden="true" tabindex="-1">
+      <a 
+        href="{{ item.link }}" 
+        class="flex justify-center items-center" 
+        aria-hidden="true">
         <img class="figure-image lazyload h-auto object-cover"
           src="{{ item.thumbnail.src }}"
           data-srcset="{{function('wp_get_attachment_image_srcset', item.thumbnail.id)}}"
           data-sizes="auto">
-        {# <div class="absolute top-0 left-0">{{ item.title }}</div> #}
+        <div class="absolute mix-blend-difference text-white">{{ item.title }}</div>
       </a>
     </div>
   {% endfor %}

@@ -1,16 +1,21 @@
-<flynt-component client:visible name="BlockImageInterview" class="interviewComponent">
-  <div class="px-lg">
+<flynt-component 
+  client:visible 
+  name="BlockImageInterview" 
+  class="
+    interviewComponent 
+    min-w-full lg:min-w-[50vw] h-auto 
+    flex justify-start align-top 
+    px-sm lg:px-lg">
     <figure class="figure">
-      {% if image %}
-        <img class="figure-image lazyload object-cover h-auto max-h-[calc(100vh_-_120px)]"
-          src="{{ image.src }}"
-          data-srcset="{{function('wp_get_attachment_image_srcset', image.id)}}"
-          data-sizes="auto"
-          alt="{{ image.alt|e }}">
-      {% endif %}
-      {% if image.caption %}
-        <figcaption class="caption">{{ image.caption|e }}</figcaption>
-      {% endif %}
-    </figure>
-  </div>
+    {% if image %}
+      <img class="figure-image lazyload object-cover h-auto"
+        src="{{ image.src }}"
+        data-srcset="{{function('wp_get_attachment_image_srcset', image.id)}}"
+        data-sizes="auto"
+        alt="{{ image.alt|e }}">
+    {% endif %}
+    {% if image.caption %}
+      <figcaption class="caption">{{ image.caption|e }}</figcaption>
+    {% endif %}
+  </figure>
 </flynt-component>

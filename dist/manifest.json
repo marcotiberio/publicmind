@@ -1,6 +1,6 @@
 {
   "Components/AccordionDefault/script.js": {
-    "file": "assets/script-c42ce534.js",
+    "file": "assets/script-4ed993c7.js",
     "isDynamicEntry": true,
     "src": "Components/AccordionDefault/script.js"
   },
@@ -10,7 +10,7 @@
     "src": "Components/BlockImageLink/script.js"
   },
   "Components/BlockPostArchive/script.js": {
-    "file": "assets/script-a3aa5070.js",
+    "file": "assets/script-0e9a9e32.js",
     "imports": [
       "__commonjsHelpers-28e086c5.js"
     ],
@@ -58,20 +58,18 @@
     "src": "Components/NavigationBurger/script.js"
   },
   "Components/SliderHorizontal/script.js": {
-    "file": "assets/script-4ed993c7.js",
+    "file": "assets/script-a89f2592.js",
+    "imports": [
+      "_swiper-bundle.min-2c4734cd.js",
+      "_helpers-0bb72b7a.js"
+    ],
     "isDynamicEntry": true,
     "src": "Components/SliderHorizontal/script.js"
   },
-  "Components/SliderImages/script.css": {
-    "file": "assets/script-6c3c321b.css",
-    "src": "Components/SliderImages/script.css"
-  },
   "Components/SliderImages/script.js": {
-    "css": [
-      "assets/script-6c3c321b.css"
-    ],
-    "file": "assets/script-e13156f5.js",
+    "file": "assets/script-b0b61d87.js",
     "imports": [
+      "_swiper-bundle.min-2c4734cd.js",
       "_helpers-0bb72b7a.js"
     ],
     "isDynamicEntry": true,
@@ -85,6 +83,12 @@
   },
   "_index-2a8ce3c2.js": {
     "file": "assets/index-2a8ce3c2.js"
+  },
+  "_swiper-bundle.min-2c4734cd.js": {
+    "css": [
+      "assets/swiper-bundle-6c3c321b.css"
+    ],
+    "file": "assets/swiper-bundle.min-2c4734cd.js"
   },
   "assets/admin.js": {
     "file": "assets/admin-02f88806.js",
@@ -118,12 +122,12 @@
       "Components/SliderHorizontal/script.js",
       "Components/SliderImages/script.js"
     ],
-    "file": "assets/main-0a23e7a0.js",
+    "file": "assets/main-c6575f07.js",
     "isEntry": true,
     "src": "assets/main.js"
   },
   "assets/main.scss": {
-    "file": "assets/main-004a4fee.css",
+    "file": "assets/main-ee4ecabd.css",
     "isEntry": true,
     "src": "assets/main.scss"
   },
@@ -133,7 +137,7 @@
     "src": "assets/print.scss"
   },
   "assets/tinyMce.scss": {
-    "file": "assets/tinyMce-4a918421.css",
+    "file": "assets/tinyMce-e0d35e0e.css",
     "isEntry": true,
     "src": "assets/tinyMce.scss"
   },
@@ -141,5 +145,9 @@
     "file": "assets/index-1b2afe3b.js",
     "isDynamicEntry": true,
     "src": "node_modules/@webreflection/custom-elements-builtin/esm/index.js"
+  },
+  "swiper-bundle.css": {
+    "file": "assets/swiper-bundle-6c3c321b.css",
+    "src": "swiper-bundle.css"
   }
 }

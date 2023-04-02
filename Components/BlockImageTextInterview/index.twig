@@ -1,5 +1,12 @@
-<flynt-component client:visible name="BlockImageTextInterview" class="interviewComponent">
-  <div class="lg:flex lg:align-start lg:justify-between lg:gap-lg px-lg" {{ imagePosition ? 'data-image-position="' ~ imagePosition ~ '"' }}>
+<flynt-component 
+  client:visible 
+  name="BlockImageTextInterview" 
+  class="
+    interviewComponent 
+    min-w-full lg:min-w-[83.3vw] h-[calc(100vh_-_104px)] lg:h-[calc(100vh_-_120px)] 
+    flex justify-start align-top 
+    px-sm lg:px-lg">
+  <div class="flex align-start justify-start lg:justify-between gap-sm lg:gap-lg" {{ imagePosition ? 'data-image-position="' ~ imagePosition ~ '"' }}>
     <div class="w-full">
       {% if image %}
       <img class="figure-image lazyload object-cover aspect-[2/1] h-auto"

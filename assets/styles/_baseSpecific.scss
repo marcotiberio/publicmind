@@ -34,128 +34,238 @@
 
 .page-artists {
   .mainContent {
-    display: block;
-    height: 100vw;
-    left: 0;
-    margin: 0;
+    display: flex;
+    height: 100vh;
     overflow-x: hidden;
-    overflow-y: auto;
-    padding-top: 1px;
-    position: absolute;
-    scrollbar-width: none;
-    top: 0;
-    transform: rotate(-90deg) translateY(-100vh);
-    transform-origin: right top;
-    width: 100vh;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
   }
-
-  .mainContent > flynt-component[name='ArchiveArtists'] {
-    display: block;
-    padding: 60px 20px;
-    transform: rotate(90deg) translateY(-70vh);
-    transform-origin: right top;
-  }
-  
-  .squares {
-    padding: 30vh 0 0;
-  }
-
-  .squares > flynt-component[name='ArchiveArtists'] {
-    height: 30vh;
-    // margin: 20px 0;
-    margin: 0;
-    width: 30vh;
-  }
-
-  .squares>flynt-component[name='ArchiveArtists']:last-child {
-    margin-bottom: calc(-100vh + 10px);
-  }  
 }
 
-.single-interview {
-  .post {
-    display: block;
-    height: 100vw;
-    left: 0;
-    margin: 0;
+.page-news {
+  .mainContent {
+    display: flex;
+    height: calc(100vh - 64px);
     overflow-x: hidden;
-    overflow-y: auto;
-    padding-top: 1px;
-    position: absolute;
-    scrollbar-width: none;
-    top: 0;
-    transform: rotate(-90deg) translateY(-100vh);
-    transform-origin: right top;
-    width: 100vh;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-
-  .post > .interviewComponent {
-    display: block;
-    padding: 60px 20px;
-    transform: rotate(90deg);
-    transform-origin: right top;
-  }
-  
-  .squares {
-    padding: 100vh 0 0;
-  }
-
-  .squares > .interviewComponent {
-    height: 100vh;
-    width: 100vh;
-  }
-
-  .squares>.interviewComponent:last-child {
-    margin-bottom: calc((100vh)*(-1));
   }
 }
 
 .page-archive {
   .mainContent {
-    display: block;
-    height: 100vw;
-    left: 0;
-    margin: 0;
+    display: flex;
+    height: 100vh;
     overflow-x: hidden;
-    overflow-y: auto;
-    padding-top: 1px;
-    position: absolute;
-    scrollbar-width: none;
-    top: 0;
-    transform: rotate(-90deg) translateY(-100vh);
-    transform-origin: right top;
-    width: 100vh;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-
-  .mainContent > .archiveComponent {
-    display: block;
-    padding: 60px 20px;
-    transform: rotate(90deg) translateX(-50vh) translateY(-25vh);
-    transform-origin: right top;
-  }
-  
-  .squares {
-    padding: 100vh 0 0;
-  }
-
-  .squares > .archiveComponent {
-    height: 50vh;
-    width: 50vh;
-  }
-
-  .squares>.archiveComponent:last-child {
-    margin-bottom: calc((100vh)*(-1));
   }
 }
+
+.single-interview {
+  .mainContent {
+    display: flex;
+    height: 100vh;
+    overflow-x: hidden;
+    padding-top: 60px;
+  }
+}
+
+// .single-interview {
+//   .post {
+//     display: block;
+//     height: 100vw;
+//     left: 0;
+//     margin: 0;
+//     overflow-x: hidden;
+//     overflow-y: auto;
+//     padding-top: 1px;
+//     position: absolute;
+//     scrollbar-width: none;
+//     top: 0;
+//     transform: rotate(-90deg) translateY(-100vh);
+//     transform-origin: right top;
+//     width: 100vh;
+
+//     &::-webkit-scrollbar {
+//       display: none;
+//     }
+//   }
+
+//   .post > .interviewComponent {
+//     display: block;
+//     padding: 60px 20px;
+//     transform: rotate(90deg);
+//     transform-origin: right top;
+//   }
+  
+//   .squares {
+//     padding: 100vh 0 0;
+//   }
+
+//   .squares > .interviewComponent {
+//     height: 100vh;
+//     width: 100vh;
+//   }
+
+//   .squares>.interviewComponent:last-child {
+//     margin-bottom: calc((100vh)*(-1));
+//   }
+// }
+
+// .page-artists {
+//   .mainContent {
+//     display: block;
+//     height: 100vw;
+//     left: 0;
+//     margin: 0;
+//     overflow-x: hidden;
+//     overflow-y: auto;
+//     padding-top: 1px;
+//     position: absolute;
+//     scrollbar-width: none;
+//     top: 0;
+//     transform: rotate(-90deg) translateY(-100vh);
+//     transform-origin: right top;
+//     width: 100vh;
+
+//     &::-webkit-scrollbar {
+//       display: none;
+//     }
+//   }
+
+//   .mainContent > flynt-component[name='ArchiveArtists'] {
+//     display: block;
+//     padding: 60px 20px;
+//     transform: rotate(90deg) translateY(-70vh);
+//     transform-origin: right top;
+//   }
+  
+//   .squares {
+//     padding: 30vh 0 0;
+//   }
+
+//   .squares > flynt-component[name='ArchiveArtists'] {
+//     height: 30vh;
+//     // margin: 20px 0;
+//     margin: 0;
+//     width: 30vh;
+//   }
+
+//   .squares>flynt-component[name='ArchiveArtists']:last-child {
+//     margin-bottom: calc(-100vh + 10px);
+//   }  
+// }
+
+// .page-news {
+//   .mainContent {
+//     display: block;
+//     height: 100vw;
+//     left: 0;
+//     margin: 0;
+//     overflow-x: hidden;
+//     overflow-y: auto;
+//     padding-top: 1px;
+//     position: absolute;
+//     scrollbar-width: none;
+//     top: 0;
+//     transform: rotate(-90deg) translateY(-100vh);
+//     transform-origin: right top;
+//     width: 100vh;
+
+//     &::-webkit-scrollbar {
+//       display: none;
+//     }
+//   }
+
+//   .mainContent > .newsItem {
+//     display: block;
+//     padding: 60px 20px;
+//     transform: rotate(90deg) translateY(-40vh);
+//     transform-origin: right top;
+
+//     @media (max-width: $breakpoint-desktop) {
+//       transform: rotate(90deg) translateY(-60vh);
+//     }
+//   }
+  
+//   .squares {
+//     padding: 60vh 0 0;
+
+//     @media (max-width: $breakpoint-desktop) {
+//       padding: 40vh 0 0;
+//     }
+//   }
+
+//   .squares > .newsItem {
+//     height: 60vh;
+//     margin: 0;
+//     width: 60vh;
+    
+//     @media (max-width: $breakpoint-desktop) {
+//       height: 40vh;
+//       margin: 0;
+//       width: 40vh;
+//     }
+//   }
+
+//   .squares>.newsItem:last-child {
+//     margin-bottom: calc((100vh)*(-1));
+//   }
+// }
+
+// .page-archive {
+//   .mainContent {
+//     display: flex;
+//     overscroll-behavior: none;
+//     height: 100vh;
+
+//     .archiveComponent {
+//       overscroll-behavior: none;
+//       display: flex;
+//       flex-wrap: nowrap;
+//     }
+//   }
+// }
+
+
+// .page-archive {
+//   .pageWrapper {
+//     height: 100vh;
+//     width: 100vw;
+//   }
+
+//   .mainContent {
+//     display: block;
+//     height: 100vw;
+//     left: 0;
+//     margin: 0;
+//     overflow-x: hidden;
+//     overflow-y: auto;
+//     padding-top: 1px;
+//     position: absolute;
+//     scrollbar-width: none;
+//     top: 0;
+//     transform: rotate(-90deg) translateY(-100vh);
+//     transform-origin: right top;
+//     width: 100vh;
+
+//     &::-webkit-scrollbar {
+//       display: none;
+//     }
+//   }
+
+//   .mainContent > .archiveComponent {
+//     display: block;
+//     padding: 60px 20px;
+//     transform: rotate(90deg) translateX(-50vh) translateY(-25vh);
+//     transform-origin: right top;
+//   }
+  
+//   .squares {
+//     padding: 100vh 0 0;
+//   }
+
+//   .squares > .archiveComponent {
+//     height: 50vh;
+//     width: 50vh;
+//   }
+
+//   .squares>.archiveComponent:last-child {
+//     margin-bottom: calc((100vh)*(-1));
+//   }
+// }

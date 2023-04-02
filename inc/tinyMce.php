@@ -144,9 +144,15 @@ function getConfig()
                 ]
             ],
             [
-                'title' => 'Paragraph',
-                'classes' => 'paragraph',
-                'selector' => '*'
+                'title' => 'Text',
+                'icon' => '',
+                'items' => [
+                    [
+                        'title' => 'Quote',
+                        'classes' => 'quote',
+                        'selector' => '*'
+                    ]
+                ]
             ],
         ],
         'toolbars' => [

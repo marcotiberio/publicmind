@@ -3,7 +3,7 @@
     <div class="w-full lg:w-[58.3vw]">
       {% if image %}
         <img class="lazyload w-full h-full object-cover aspect-4/3"
-          src="{{ image.src | resize(32) }}"
+          src="{{ image.src }}"
           data-srcset="{{function('wp_get_attachment_image_srcset', image.id)}}"
           data-sizes="auto"
           alt="{{ image.alt|e }}"

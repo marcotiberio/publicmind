@@ -27,6 +27,7 @@ add_action('Flynt/afterRegisterComponents', function () {
                     Components\BlockImageLink\getACFLayout(),
                     Components\BlockImageText\getACFLayout(),
                     Components\BlockManifesto\getACFLayout(),
+                    Components\BlockNewsItem\getACFLayout(),
                     Components\BlockPostArchive\getACFLayout(),
                     Components\BlockPress\getACFLayout(),
                     Components\BlockVideoOembed\getACFLayout(),

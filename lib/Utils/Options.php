@@ -8,8 +8,8 @@ class Options
 {
     public const OPTION_TYPES = [
         'translatable' => [
-            'title' => 'Translatable Options',
-            'icon' => 'dashicons-translation',
+            'title' => 'Blocks Options',
+            'icon' => 'dashicons-hammer',
             'translatable' => true
         ],
         'global' => [

@@ -65,7 +65,7 @@
     "src": "Components/NavigationBurger/script.js"
   },
   "Components/SliderHorizontal/script.js": {
-    "file": "assets/script-a89f2592.js",
+    "file": "assets/script-b0b61d87.js",
     "imports": [
       "_swiper-bundle.min-2c4734cd.js",
       "_helpers-0bb72b7a.js"
@@ -74,7 +74,7 @@
     "src": "Components/SliderHorizontal/script.js"
   },
   "Components/SliderImages/script.js": {
-    "file": "assets/script-b0b61d87.js",
+    "file": "assets/script-a89f2592.js",
     "imports": [
       "_swiper-bundle.min-2c4734cd.js",
       "_helpers-0bb72b7a.js"

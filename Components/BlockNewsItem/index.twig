@@ -1,15 +1,19 @@
 <flynt-component 
-  client:visible 
   name="BlockNewsItem" 
+  load:on="load" 
   class="
     newsComponent 
-    min-w-[60vw] lg:min-w-[30vw] min-h-full 
-    flex justify-start align-top 
-    pr-sm">
-  <div class="flex flex-col align-start justify-between gap-md">
+    py-sm lg:pr-sm lg:py-0 border-b lg:border-b-0 border-black">
+  <div class="hoverable flex flex-col align-start justify-start lg:justify-between gap-md lg:h-[calc(100vh_-_120px)]">
     <div class="w-full">
+      {% if date or title %}
+      <div class="w-full flex flex-row items-center justify-between mb-sm">
+        <div class="w-1/2 grow">{{ date }}</div>
+        <div class="w-1/2 grow">{{ title }}</div>
+      </div>
+      {% endif %}
       {% if image %}
-      <img class="figure-image lazyload object-cover h-auto max-h-[335px] w-auto mb-md"
+      <img class="follow-image object-cover h-[335px] w-[335px] mb-md"
         src="{{ image.src }}"
         data-srcset="{{function('wp_get_attachment_image_srcset', image.id)}}"
         data-sizes="auto"

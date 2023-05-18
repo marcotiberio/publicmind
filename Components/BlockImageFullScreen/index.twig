@@ -1,16 +1,19 @@
-<flynt-component client:visible name="BlockImageFullScreen">
+<flynt-component load:on="visible" name="BlockImageFullScreen">
   <div class="wrapper relative">
-    <figure class="figure">
-      {% if image %}
-        <img class="figure-image lazyload h-screen w-screen object-cover"
-          src="{{ image.src | resize(32) }}"
-          data-srcset="{{function('wp_get_attachment_image_srcset', image.id)}}"
-          data-sizes="auto"
-          alt="{{ image.alt|e }}">
-      {% endif %}
-    </figure>
+    {% if image %}
+      <img class="lazyload h-screen w-screen object-cover relative"
+        src="{{ image.src }}"
+        data-srcset="{{function('wp_get_attachment_image_srcset', image.id)}}"
+        data-sizes="auto"
+        alt="{{ image.alt|e }}">
+    {% endif %}
+    {% if video %}
+      <video playsinline autoplay loop muted class="h-screen w-screen relative">
+        <source type="video/mp4" src="{{ video }}">
+      </video>
+    {% endif %}
     {% if options.showLogo %}
-    <div class="logo absolute top-0 no-underline h-screen w-screen flex items-center">
+    <div class="logo absolute top-1/2 left-1/2 no-underline fade-out">
       <img class="logo-image w-full px-sm" width="142" height="44" src="{{ logo.src }}" alt="{{ logo.alt }}">
     </div>
     {% endif %}

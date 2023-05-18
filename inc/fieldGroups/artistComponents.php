@@ -97,38 +97,38 @@ add_action('Flynt/afterRegisterComponents', function () {
             ],
         ],
     ]);
-    ACFComposer::registerFieldGroup([
-        'name' => 'artistComponents',
-        'title' => __('Artist Components', 'flynt'),
-        'style' => 'seamless',
-        'fields' => [
-            [
-                'name' => 'artistComponents',
-                'label' => __('Artist Components', 'flynt'),
-                'type' => 'flexible_content',
-                'button_label' => __('Add Component', 'flynt'),
-                'layouts' => [
-                    Components\BlockAnnouncement\getACFLayout(),
-                    Components\BlockContactForm\getACFLayout(),
-                    Components\BlockDivider\getACFLayout(),
-                    Components\BlockEventDescription\getACFLayout(),
-                    Components\BlockGallery\getACFLayout(),
-                    Components\BlockGalleryEvent\getACFLayout(),
-                    Components\BlockPress\getACFLayout(),
-                    Components\BlockVideoOembed\getACFLayout(),
-                    Components\BlockWysiwyg\getACFLayout(),
-                    Components\SliderImages\getACFLayout(),
-                ],
-            ],
-        ],
-        'location' => [
-            [
-                [
-                    'param' => 'post_type',
-                    'operator' => '==',
-                    'value' => 'artist',
-                ],
-            ],
-        ],
-    ]);
+    // ACFComposer::registerFieldGroup([
+    //     'name' => 'artistComponents',
+    //     'title' => __('Artist Components', 'flynt'),
+    //     'style' => 'seamless',
+    //     'fields' => [
+    //         [
+    //             'name' => 'artistComponents',
+    //             'label' => __('Artist Components', 'flynt'),
+    //             'type' => 'flexible_content',
+    //             'button_label' => __('Add Component', 'flynt'),
+    //             'layouts' => [
+    //                 Components\BlockAnnouncement\getACFLayout(),
+    //                 Components\BlockContactForm\getACFLayout(),
+    //                 Components\BlockDivider\getACFLayout(),
+    //                 Components\BlockEventDescription\getACFLayout(),
+    //                 Components\BlockGallery\getACFLayout(),
+    //                 Components\BlockGalleryEvent\getACFLayout(),
+    //                 Components\BlockPress\getACFLayout(),
+    //                 Components\BlockVideoOembed\getACFLayout(),
+    //                 Components\BlockWysiwyg\getACFLayout(),
+    //                 Components\SliderImages\getACFLayout(),
+    //             ],
+    //         ],
+    //     ],
+    //     'location' => [
+    //         [
+    //             [
+    //                 'param' => 'post_type',
+    //                 'operator' => '==',
+    //                 'value' => 'artist',
+    //             ],
+    //         ],
+    //     ],
+    // ]);
 });

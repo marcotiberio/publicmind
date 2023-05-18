@@ -1,6 +1,6 @@
 import Rellax from 'rellax'
 
-const scrollElements = document.querySelectorAll('.archiveComponent.animated')
+const scrollElements = document.querySelectorAll('.animatedComponent')
 
 const elementInView = (el, dividend = 1) => {
   const elementLeft = el.getBoundingClientRect().left

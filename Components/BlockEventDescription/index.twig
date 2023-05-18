@@ -1,4 +1,4 @@
-<flynt-component client:visible name="BlockEventDescription" class="boxed">
+<flynt-component load:on="visible" name="BlockEventDescription" class="boxed">
   <div class="flex flex-col lg:flex-row align-top justify-between gap-lg">
     <div class="content lg:w-2/3">
       {{ contentHtml|e('wp_kses_post') }}

@@ -57,38 +57,38 @@ add_action('Flynt/afterRegisterComponents', function () {
             ],
         ],
     ]);
-    ACFComposer::registerFieldGroup([
-        'name' => 'releaseComponents',
-        'title' => __('Release Components', 'flynt'),
-        'style' => 'seamless',
-        'fields' => [
-            [
-                'name' => 'releaseComponents',
-                'label' => __('Release Components', 'flynt'),
-                'type' => 'flexible_content',
-                'button_label' => __('Add Component', 'flynt'),
-                'layouts' => [
-                    Components\BlockAnnouncement\getACFLayout(),
-                    Components\BlockContactForm\getACFLayout(),
-                    Components\BlockDivider\getACFLayout(),
-                    Components\BlockEventDescription\getACFLayout(),
-                    Components\BlockGallery\getACFLayout(),
-                    Components\BlockGalleryEvent\getACFLayout(),
-                    Components\BlockPress\getACFLayout(),
-                    Components\BlockVideoOembed\getACFLayout(),
-                    Components\BlockWysiwyg\getACFLayout(),
-                    Components\SliderImages\getACFLayout(),
-                ],
-            ],
-        ],
-        'location' => [
-            [
-                [
-                    'param' => 'post_type',
-                    'operator' => '==',
-                    'value' => 'release',
-                ],
-            ],
-        ],
-    ]);
+    // ACFComposer::registerFieldGroup([
+    //     'name' => 'releaseComponents',
+    //     'title' => __('Release Components', 'flynt'),
+    //     'style' => 'seamless',
+    //     'fields' => [
+    //         [
+    //             'name' => 'releaseComponents',
+    //             'label' => __('Release Components', 'flynt'),
+    //             'type' => 'flexible_content',
+    //             'button_label' => __('Add Component', 'flynt'),
+    //             'layouts' => [
+    //                 Components\BlockAnnouncement\getACFLayout(),
+    //                 Components\BlockContactForm\getACFLayout(),
+    //                 Components\BlockDivider\getACFLayout(),
+    //                 Components\BlockEventDescription\getACFLayout(),
+    //                 Components\BlockGallery\getACFLayout(),
+    //                 Components\BlockGalleryEvent\getACFLayout(),
+    //                 Components\BlockPress\getACFLayout(),
+    //                 Components\BlockVideoOembed\getACFLayout(),
+    //                 Components\BlockWysiwyg\getACFLayout(),
+    //                 Components\SliderImages\getACFLayout(),
+    //             ],
+    //         ],
+    //     ],
+    //     'location' => [
+    //         [
+    //             [
+    //                 'param' => 'post_type',
+    //                 'operator' => '==',
+    //                 'value' => 'release',
+    //             ],
+    //         ],
+    //     ],
+    // ]);
 });

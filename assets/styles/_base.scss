@@ -2,7 +2,13 @@
 *  Typography
 */
 
-@include font-face('Oracle', 'oraclegm-regularmono-webfont', '700', 'normal');
+@font-face {
+  font-display: swap;
+  font-family: 'Oracle';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/oraclegm-regularmono-webfont.woff') format('woff');
+}
 
 // body {
 //   padding: var(--spacingLarge);
@@ -18,6 +24,10 @@ html {
   @media (min-width: $breakpoint-tablet + 1) {
     font-size: var(--bodyFontSize);
   }
+}
+
+body {
+  font-family: 'Oracle', monospace;
 }
 
 body,
@@ -153,7 +163,18 @@ blockquote,
 
 // ul,
 // ol {
-//   padding-inline-start: 1.5rem;
+//   color: currentColor;
+//   list-style: disc;
+//   padding: var(--spacingSmall) var(--spacingLarge);
+
+//   li {
+//     color: currentColor;
+//     font-size: 1.5rem;
+
+//     @media (min-width: $breakpoint-desktop) {
+//       font-size: 1.25rem;
+//     }
+//   }
 // }
 
 table {
@@ -431,11 +452,19 @@ flynt-component {
   }
 }
 
+.mainHeader {
+  @apply bg-white;
+}
+
+.home {
+  .mainHeader {
+    @apply bg-transparent;
+  }
+}
 
 .mainContent {
-  @apply p-sm;
-  @apply md:py-lg;
-  @apply md:px-sm;
+  @apply py-lg;
+  @apply px-sm;
 }
 
 .home {

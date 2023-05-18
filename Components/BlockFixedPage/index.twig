@@ -1,4 +1,4 @@
-<flynt-component client:visible name="BlockFixedPage">
+<flynt-component load:on="visible" name="BlockFixedPage">
   <div class="h-auto lg:h-[calc(100vh_-_120px)] flex flex-col lg:flex-row gap-sm" {{ imagePosition ? 'data-image-position="' ~ imagePosition ~ '"' }}>
     <div class="w-full lg:w-[58.3vw]">
       {% if image %}

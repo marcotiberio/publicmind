@@ -1,27 +1,13 @@
 flynt-component[name='BlockImageFullScreen'] {
-  .figure {
-    margin: 0 auto;
+  .logo {
+    transform: translate(-50%, -50%) scale(2);
+    transition: all 3s ease-in-out;
 
-    &[data-image-size='small'] {
-      max-width: 375px;
-    }
-
-    &[data-image-size='medium'] {
-      max-width: var(--content-max-width);
-    }
-
-    &[data-image-size='large'] {
-      max-width: var(--content-max-width-large);
-    }
-
-    &[data-image-size='full'] {
-      max-width: 100%;
-
-      .caption {
-        margin-inline: auto;
-        max-width: var(--container-max-width);
-        padding-inline: var(--container-padding);
-      }
+    &.fade-out {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0);
+      transition: all 3s ease-in-out;
+      visibility: hidden;
     }
   }
 }

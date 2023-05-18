@@ -10,7 +10,8 @@ module.exports = {
       white: '#fff',
       black: '#000',
       blue: '#1113ff',
-      current: 'currentColor'
+      current: 'currentColor',
+      transparent: 'transparent'
     },
     screens: {
       sm: '640px',

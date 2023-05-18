@@ -1,0 +1,10 @@
+<flynt-component load:on="visible" name="BlockFixedPageText">
+  <div class="h-auto lg:h-[calc(100vh_-_120px)] w-full flex flex-col lg:flex-row gap-xl lg:gap-[8.3vw]">
+    {% for column in repeaterText %}
+      <div class="w-full lg:w-[33.2vw] flex flex-col">
+        <h1 class="mb-lg lg:mb-xl">{{ column.title }}</h1>
+        <div>{{ column.contentHtml|e('wp_kses_post') }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</flynt-component>

@@ -1,10 +1,12 @@
 flynt-component[name='BlockPostArchive'] {
-  &.animated {
-    opacity: 0;
-    transition: all 1s ease-in-out;
-  }
-
-  &.fade-in {
-    opacity: 1;
+  @media (min-width: $breakpoint-desktop) {
+    &.animatedComponent {
+      opacity: 0;
+      transition: all 1s ease-in-out;
+    }
+  
+    &.fade-in {
+      opacity: 1;
+    }
   }
 }

@@ -18,6 +18,25 @@ function getACFLayout()
                 'endpoint' => 0,
             ],
             [
+                'label' => __('Title', 'flynt'),
+                'name' => 'title',
+                'type' => 'text',
+                'wrapper' =>  [
+                    'width' => 50,
+                ],
+            ],
+            [
+                'label' => __('Date', 'flynt'),
+                'name' => 'date',
+                'type' => 'date_picker',
+                'display_format' => 'Y.m.d',
+                'return_format' => 'Y.m.d',
+                'first_day' => 1,
+                'wrapper' =>  [
+                    'width' => 50,
+                ],
+            ],
+            [
                 'label' => __('Image', 'flynt'),
                 'instructions' => __('Image-Format: JPG, PNG, SVG.', 'flynt'),
                 'name' => 'image',
@@ -30,7 +49,7 @@ function getACFLayout()
                 ],
             ],
             [
-                'label' => __('Content', 'flynt'),
+                'label' => __('Description', 'flynt'),
                 'name' => 'contentHtml',
                 'type' => 'wysiwyg',
                 'delay' => 1,

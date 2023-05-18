@@ -1,5 +1,5 @@
 {% if items|length > 0 %}
-  <flynt-component client:visible name="BlockArtistSelector" class="">
+  <flynt-component load:on="visible" name="BlockArtistSelector" class="">
     <div class="container">
       {% if preContentHtml or preContentTitle %}
       <div class="preContent">

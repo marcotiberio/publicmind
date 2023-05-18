@@ -14,11 +14,11 @@
       <div class="pageWrapper">
         <header>
           {% block header %}
-            <div class="fixed top-0 left-0 w-screen z-50 flex flex-row justify-between">
+            <div class="mainHeader fixed top-0 left-0 w-screen z-50 flex flex-row justify-between">
               {{ renderComponent('NavigationMain') }}
               {{ renderComponent('NavigationMainRight') }}
             </div>
-            {{ renderComponent('NavigationBurger') }}
+            {# {{ renderComponent('NavigationBurger') }} #}
           {% endblock %}
         </header>
         <main id="mainContent" class="mainContent squares" aria-label="{{ __('Content', 'flynt') }}">
@@ -31,9 +31,20 @@
           {% endif %}
         </main>
         <footer class="mainFooter">
-          {# {% block footer %}
-            {{ renderComponent('NavigationFooter') }}
-          {% endblock %} #}
+          <a href="{{ site.link|e('esc_url') }}" class="mainfooter fixed bottom-0 left-0 w-screen p-sm z-50 bg-white lg:bg-transparent grid grid-cols-12 sm:grid-cols-12 md:grid-cols-12 xl:grid-cols-12 gap-sm lg:gap-md">
+            <div>p</div>
+            <div></div>
+            <div>u</div>
+            <div>b</div>
+            <div class="text-right">l</div>
+            <div>i</div>
+            <div>c</div>
+            <div></div>
+            <div class="text-right">m</div>
+            <div>i</div>
+            <div>n</div>
+            <div class="text-right">d</div>
+          </a>
         </footer>
       </div>
     {% endblock %}

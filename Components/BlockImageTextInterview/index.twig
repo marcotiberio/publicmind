@@ -1,15 +1,8 @@
-<flynt-component 
-  client:visible 
-  name="BlockImageTextInterview" 
-  class="
-    interviewComponent 
-    min-w-full lg:min-w-[83.3vw] h-[calc(100vh_-_104px)] lg:h-[calc(100vh_-_120px)] 
-    flex justify-start align-top 
-    px-sm lg:px-lg">
-  <div class="flex align-start justify-start lg:justify-between gap-sm lg:gap-lg" {{ imagePosition ? 'data-image-position="' ~ imagePosition ~ '"' }}>
+<flynt-component load:on="visible" name="BlockImageTextInterview" class="interviewComponent min-w-[75vw]">
+  <div class="flex align-start justify-between gap-sm py-sm lg:px-lg lg:py-0" {{ imagePosition ? 'data-image-position="' ~ imagePosition ~ '"' }}>
     <div class="w-full">
       {% if image %}
-      <img class="figure-image lazyload object-cover aspect-[2/1] h-auto"
+      <img class="figure-image lazyload object-cover aspect-[2/1] h-auto max-h-[380px]"
         src="{{ image.src }}"
         data-srcset="{{function('wp_get_attachment_image_srcset', image.id)}}"
         data-sizes="auto"

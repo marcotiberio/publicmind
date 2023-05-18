@@ -9,8 +9,16 @@
     "isDynamicEntry": true,
     "src": "Components/BlockImageLink/script.js"
   },
+  "Components/BlockNewsItem/script.js": {
+    "file": "assets/script-050835a5.js",
+    "imports": [
+      "__commonjsHelpers-28e086c5.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "Components/BlockNewsItem/script.js"
+  },
   "Components/BlockPostArchive/script.js": {
-    "file": "assets/script-0e9a9e32.js",
+    "file": "assets/script-27332ab3.js",
     "imports": [
       "__commonjsHelpers-28e086c5.js"
     ],
@@ -48,9 +56,8 @@
     "src": "Components/ListingHomepage/script.js"
   },
   "Components/NavigationBurger/script.js": {
-    "file": "assets/script-3da2d9d9.js",
+    "file": "assets/script-e54e009e.js",
     "imports": [
-      "__commonjsHelpers-28e086c5.js",
       "_index-2a8ce3c2.js",
       "_helpers-0bb72b7a.js"
     ],
@@ -96,7 +103,7 @@
     "src": "assets/admin.js"
   },
   "assets/admin.scss": {
-    "file": "assets/admin-5d97f4dd.css",
+    "file": "assets/admin-69f5f40b.css",
     "isEntry": true,
     "src": "assets/admin.scss"
   },
@@ -113,6 +120,7 @@
       "node_modules/@webreflection/custom-elements-builtin/esm/index.js",
       "Components/AccordionDefault/script.js",
       "Components/BlockImageLink/script.js",
+      "Components/BlockNewsItem/script.js",
       "Components/BlockPostArchive/script.js",
       "Components/BlockVideoOembed/script.js",
       "Components/GridPostsArchive/script.js",
@@ -122,12 +130,12 @@
       "Components/SliderHorizontal/script.js",
       "Components/SliderImages/script.js"
     ],
-    "file": "assets/main-c6575f07.js",
+    "file": "assets/main-0cb69401.js",
     "isEntry": true,
     "src": "assets/main.js"
   },
   "assets/main.scss": {
-    "file": "assets/main-ee4ecabd.css",
+    "file": "assets/main-eaa2aadc.css",
     "isEntry": true,
     "src": "assets/main.scss"
   },
@@ -137,7 +145,7 @@
     "src": "assets/print.scss"
   },
   "assets/tinyMce.scss": {
-    "file": "assets/tinyMce-e0d35e0e.css",
+    "file": "assets/tinyMce-0712ca9a.css",
     "isEntry": true,
     "src": "assets/tinyMce.scss"
   },

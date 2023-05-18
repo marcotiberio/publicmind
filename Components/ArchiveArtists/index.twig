@@ -1,25 +1,22 @@
 {% if posts|length > 0 %}
   <flynt-component 
-    client:visible 
+    load:on="visible" 
     name="ArchiveArtists" 
     class="
-      artistsComponent  
-      min-w-[60vw] lg:min-w-[30vw] min-h-full 
-      flex justify-start align-top 
-      pr-sm">
-    <div class="flex flex-col">
+      artistsComponent">
+    <div class="flex flex-row lg:flex-col gap-sm lg:gap-0">
       {% if blockTitle %}
-      <div class="title lowercase">
+      <div class="title lowercase mt-[80px] lg:mt-0">
         {{ blockTitle }}
       </div>
       {% endif %}
-      <div class="wrapper">
+      <div class="wrapper grow mt-[80px] lg:mt-0">
         {% for post in posts %}
-          <div class="post mb-md flex flex-col justify-start items-start" data-theme="reset">
+          <div class="post mb-md flex flex-col justify-start items-start h-[calc(100vh_-_130px)] lg:h-auto w-full lg:w-auto">
             {% if post.thumbnail %}
-              <figure class="figure w-full">
-                <a class="" href="{{ post.link }}" aria-label="{{ post.title }}">
-                  <img class="lazyload object-cover"
+              <figure class="figure w-full lg:w-auto">
+                <a class="w-full lg:w-auto" href="{{ post.link }}" aria-label="{{ post.title }}">
+                  <img class="lazyload object-cover w-full h-full lg:w-full lg:max-h-[30vh]"
                     src="{{ post.thumbnail.src }}"
                     data-srcset="{{function('wp_get_attachment_image_srcset', post.thumbnail.id)}}"
                     data-sizes="auto"

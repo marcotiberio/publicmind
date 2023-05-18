@@ -1,9 +1,14 @@
 flynt-component[name='BlockNewsItem'] {
-  [data-image-position='top'] {
-    @apply flex-col;
+  .follow-image {
+    display: none;
+    position: absolute;
+    transition: ease 0.2s;
+    z-index: -1;
   }
 
-  [data-image-position='bottom'] {
-    @apply flex-col-reverse;
-  }
+  .hoverable:hover {
+    .follow-image {
+      display: block;
+    }
+  } 
 }

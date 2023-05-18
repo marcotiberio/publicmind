@@ -1,15 +1,12 @@
-<flynt-component 
-  client:visible 
+{# <flynt-component 
   name="BlockPostArchive" 
-  class="archiveComponent 
-  min-w-[60vw] lg:min-w-[30vw] min-h-full 
-  flex justify-center align-middle 
-  pr-sm lg:pr-0 
-  {# {% if addParallax %}rellax{% endif %}  #}
-  {% if addAnimation %}animated{% endif %} 
-  {% if selectAnimation %}{{ selectAnimation }}{% endif %}">
+  load:on="load" 
+  class="archiveComponent  
+  {% if addAnimation %}animatedComponent{% endif %} 
+  {% if selectAnimation %}{{ selectAnimation }}{% endif %}
+  ">
   {% for item in post %}
-    <div class="relative h-full flex justify-center items-center">
+    <div class="relative h-full flex {% if imagePosition %}{{ imagePosition }}{% endif %} items-center">
       <a 
         href="{{ item.link }}" 
         class="flex justify-center items-center" 
@@ -18,7 +15,33 @@
           src="{{ item.thumbnail.src }}"
           data-srcset="{{function('wp_get_attachment_image_srcset', item.thumbnail.id)}}"
           data-sizes="auto">
-        <div class="absolute mix-blend-difference text-white">{{ item.title }}</div>
+        <div class="absolute mix-blend-difference text-white text-center px-mds">{{ item.title }}</div>
+      </a>
+    </div>
+  {% endfor %}
+</flynt-component> #}
+
+<flynt-component 
+  load:on="load" 
+  name="BlockPostArchive" 
+  class="archiveComponent 
+  min-w-[60vw] lg:min-w-[30vw] min-h-full 
+  flex justify-center align-middle 
+  pb-md lg:pb-0 
+  {# {% if addParallax %}rellax{% endif %}  #}
+  {% if addAnimation %}animatedComponent{% endif %} 
+  {% if selectAnimation %}{{ selectAnimation }}{% endif %}">
+  {% for item in post %}
+    <div class="relative h-full flex justify-center items-center">
+      <a 
+        href="{{ item.link }}" 
+        class="w-full flex flex-col justify-center items-center" 
+        aria-hidden="true">
+        <img class="figure-image lazyload h-auto object-cover"
+          src="{{ item.thumbnail.src }}"
+          data-srcset="{{function('wp_get_attachment_image_srcset', item.thumbnail.id)}}"
+          data-sizes="auto">
+        <div class="w-full text-black">{{ item.title }}</div>
       </a>
     </div>
   {% endfor %}

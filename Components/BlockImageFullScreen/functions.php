@@ -22,8 +22,8 @@ function getACFLayout()
         'label' => __('Block: Image Full Screen', 'flynt'),
         'sub_fields' => [
             [
-                'label' => __('General', 'flynt'),
-                'name' => 'generalTab',
+                'label' => __('Image', 'flynt'),
+                'name' => 'imageTab',
                 'type' => 'tab',
                 'placement' => 'top',
                 'endpoint' => 0,
@@ -34,8 +34,25 @@ function getACFLayout()
                 'name' => 'image',
                 'type' => 'image',
                 'preview_size' => 'medium',
-                'required' => 1,
+                'required' => 0,
                 'mime_types' => 'jpg,jpeg,png,svg'
+            ],
+            [
+                'label' => __('Video', 'flynt'),
+                'name' => 'videoTab',
+                'type' => 'tab',
+                'placement' => 'top',
+                'endpoint' => 0,
+            ],
+            [
+                'label' => __('Video', 'flynt'),
+                'name' => 'video',
+                'type' => 'file',
+                'return_format' => 'url',
+                'mime_types' => 'mp4,mov',
+                'wrapper' => [
+                    'width' => 100,
+                ]
             ],
             [
                 'label' => __('Options', 'flynt'),

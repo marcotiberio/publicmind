@@ -8,7 +8,7 @@ function getACFLayout()
 {
     return [
         'name' => 'BlockFixedPage',
-        'label' => __('Block: Fixed Page', 'flynt'),
+        'label' => __('Block: Fixed Page (Image/text)', 'flynt'),
         'sub_fields' => [
             [
                 'label' => __('Image', 'flynt'),
